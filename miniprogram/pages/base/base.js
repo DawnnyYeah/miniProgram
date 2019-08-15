@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    array:[1,2,3,4,5,6,7,8,9,10]
   },
 
   /**
@@ -62,5 +62,23 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  /**
+   * 时间选择
+   */
+  bindDateChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    // var i = 0;
+    // this.data.array[i] = i++;
+    this.setData({
+      index: e.detail.value
+    })
+  },
 })
