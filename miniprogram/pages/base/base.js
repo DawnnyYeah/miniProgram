@@ -73,6 +73,10 @@ Page({
       date: e.detail.value
     })
   },
+
+  /**
+   *消费人数选择
+   */
   bindPickerChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     // var i = 0;
