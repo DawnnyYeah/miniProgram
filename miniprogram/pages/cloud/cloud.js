@@ -1,4 +1,4 @@
-// pages/deployFunctions/deployFunctions.js
+// pages/cloud/cloud.js
 Page({
 
   /**
