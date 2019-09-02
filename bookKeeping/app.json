@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#00FF7F",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#00FF7F",
+    "navigationBarTitleText": "青蛙记账",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
