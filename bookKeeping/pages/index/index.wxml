@@ -1,8 +1,17 @@
 <view class="bookingItemList" wx:for="{{bookingItems}}">
   <view class="bookingItem">
     {{item.itemName}}
-  </view> 
+  </view>
+  <view>
+    <van-button type="warning">编辑</van-button>
+  </view>
+  <view>
+    <van-button type="danger">删除</van-button>
+  </view>
+  <view>
+    <van-button type="info">详情</van-button>
+  </view>
 </view>
 <view class="addButton">
-  <van-button icon="plus" type="primary" bindtap="addBookingItem()" />
+  <van-button icon="add-o" type="primary" bindtap="addBookingItem()" />
 </view>

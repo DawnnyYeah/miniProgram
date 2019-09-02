@@ -10,5 +10,7 @@
 }
 
 .addButton {
-  text-align: center
+  position: fixed;
+  top: 90%;
+  right: 40%;
 }

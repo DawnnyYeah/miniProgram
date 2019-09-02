@@ -1,27 +1,26 @@
 // pages/index/index.js
+const db = wx.cloud.database();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    bookingItems: [
-      {
-        itemName: "第一次旅行"
-
-      },{
-        itemName: "第二次旅行"
-      }, {
-        itemName: "第三次旅行"
-      }
-    ]
+    bookingItems: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    db.collection('bookingItem')
+      .get({
+        success: function (res) {
+          this.setData({
+            bookingItems: res.data
+          })
+        }.bind(this)
+      })
   },
 
   /**
