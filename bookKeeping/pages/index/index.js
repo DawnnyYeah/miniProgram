@@ -5,7 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
+    bookingItems: [
+      {
+        itemName: "第一次旅行"
 
+      },{
+        itemName: "第二次旅行"
+      }, {
+        itemName: "第三次旅行"
+      }
+    ]
   },
 
   /**
@@ -61,6 +70,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
+
+  },
+
+  addBookingItem: function () {
 
   }
 })

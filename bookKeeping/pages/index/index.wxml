@@ -1,6 +1,8 @@
-<view class="bookingItemList">
-
+<view class="bookingItemList" wx:for="{{bookingItems}}">
+  <view class="bookingItem">
+    {{item.itemName}}
+  </view> 
 </view>
-<view>
-  <van-button icon="plus" type="primary"/>
+<view class="addButton">
+  <van-button icon="plus" type="primary" bindtap="addBookingItem()" />
 </view>

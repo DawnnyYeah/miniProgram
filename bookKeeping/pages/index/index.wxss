@@ -1,3 +1,14 @@
 .bookingItemList {
-  
+  height: 400rpx;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc
+}
+
+.bookingItem {
+  flex: 1
+}
+
+.addButton {
+  text-align: center
 }
